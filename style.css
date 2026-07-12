@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(252, 239, 225);
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    flex-direction: column;
+}
+
+
+.content{
+    height: 500px;
+    width: 550px;
+    background-color: rgb(255, 251, 246);
+margin: 10px;
+padding: 30px;
+/* justify-content: center;  */
+ display: flex;
+border: 2px solid black;
+border-radius: 50px;
+ box-shadow: 5px 5px rgba(155, 154, 154, 0.877);
+  flex-direction: column;
+}
+
+
+#theTask{
+width: 450px;
+height:50px ;
+border-radius: 30px;
+padding: 10px;
+font-size: 17px;
+font-weight: bold;
+}
+
+#addBtn{
+  width: 70px;
+height:50px  ;
+padding: 3px;
+margin: 10px;
+border-radius: 30px;
+font-weight: bold;
+background-color: rgb(234, 252, 249);
+}
+
+#taskList{
+    height: 22px;
+    width: auto;
+    font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+font-weight: bold;
+/* background-color: rgb(224, 243, 243); */
+margin: 10px;
+padding: 10px;
+
+
+li{
+    margin-bottom: 15px;
+    margin: 10px;
+}
+
+
+
+}
+
+
+#gg{
+    display: flex;
+        /* align-items: center; */
+
+}
+#taskList button{
+    margin-left: 30px;
+       /* margin-left: 15px; */
+       /* background-color: brown; */
+}
+.did{
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+}
+
+.didnt{
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+}
+
+.comp{
+    text-decoration: line-through;
+    color :rgb(134, 155, 155)
+}
