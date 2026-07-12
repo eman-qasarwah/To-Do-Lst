@@ -90,3 +90,34 @@ li{
     text-decoration: line-through;
     color :rgb(134, 155, 155)
 }
+@media (max-width: 600px){
+
+    body{
+        padding: 20px;
+    }
+
+    .content{
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #gg{
+        flex-direction: column;
+    }
+
+    #theTask{
+        width: 90%;
+    }
+
+    #addBtn{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #taskList{
+        width: 90%;
+        padding: 10px;
+    }
+
+}
