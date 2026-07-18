@@ -9,115 +9,164 @@ body{
 }
 
 
+h1{
+    font-size: 40px;
+}
+
+
 .content{
-    height: 500px;
     width: 550px;
+    min-height: 500px;
     background-color: rgb(255, 251, 246);
-margin: 10px;
-padding: 30px;
-/* justify-content: center;  */
- display: flex;
-border: 2px solid black;
-border-radius: 50px;
- box-shadow: 5px 5px rgba(155, 154, 154, 0.877);
-  flex-direction: column;
-}
 
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 
-#theTask{
-width: 450px;
-height:50px ;
-border-radius: 30px;
-padding: 10px;
-font-size: 17px;
-font-weight: bold;
-}
-
-#addBtn{
-  width: 70px;
-height:50px  ;
-padding: 3px;
-margin: 10px;
-border-radius: 30px;
-font-weight: bold;
-background-color: rgb(234, 252, 249);
-}
-
-#taskList{
-    height: 22px;
-    width: auto;
-    font-family: 'Courier New', Courier, monospace;
-font-size: 20px;
-font-weight: bold;
-/* background-color: rgb(224, 243, 243); */
-margin: 10px;
-padding: 10px;
-
-
-li{
-    margin-bottom: 15px;
-    margin: 10px;
-}
-
-
-
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 5px 5px rgba(155,154,154,0.5);
 }
 
 
 #gg{
     display: flex;
-        /* align-items: center; */
+    align-items: center;
+    justify-content: center;
+}
 
+
+#theTask{
+    width: 400px;
+    height: 50px;
+
+    border-radius: 30px;
+    padding: 10px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border: 2px solid gray;
 }
+
+
+#addBtn{
+    width: 120px;
+    height: 50px;
+
+    margin-left: 10px;
+
+    border-radius: 30px;
+    border: none;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color: rgb(234,252,249);
+}
+
+
+#addBtn:hover{
+    background-color: rgb(190,240,230);
+}
+
+
+#taskList{
+    margin-top: 30px;
+    padding-left: 30px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#taskList li{
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
 #taskList button{
-    margin-left: 30px;
-       /* margin-left: 15px; */
-       /* background-color: brown; */
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    cursor: pointer;
+
+    font-size: 18px;
 }
+
+
 .did{
     background-color: green;
     color: white;
-    border-radius: 30px;
+    border-radius: 50%;
 }
+
 
 .didnt{
     background-color: red;
     color: white;
-    border-radius: 30px;
+    border-radius: 50%;
 }
+
 
 .comp{
     text-decoration: line-through;
-    color :rgb(134, 155, 155)
+    color: rgb(134,155,155);
+    opacity: 0.7;
 }
-@media (max-width: 600px){
+
+
+
+@media (max-width:600px){
 
     body{
         padding: 20px;
     }
 
+
+    h1{
+        font-size: 30px;
+    }
+
+
     .content{
         width: 90%;
-        height: auto;
         padding: 20px;
     }
+
 
     #gg{
         flex-direction: column;
     }
 
+
     #theTask{
         width: 90%;
     }
 
+
     #addBtn{
-        width: 100%;
-        margin: 10px 0;
+        width: 90%;
+        margin-top: 10px;
     }
+
 
     #taskList{
         width: 90%;
-        padding: 10px;
+        padding-left: 20px;
+    }
+
+
+    #taskList li{
+        font-size: 16px;
     }
 
 }
